@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.foysal.diabetis">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Food" />
+        <activity android:name=".Medicine"/>
+        <activity android:name=".Physical" />
+        <activity android:name=".FoodSelect" />
+        <activity android:name=".HIFollowUpVisit" />
+        <activity android:name=".BloodGlucoseActivity" />
+        <activity android:name=".BGMonitoring" />
+        <activity android:name=".BGRecordForm" />
+        <activity android:name=".AvoidDrug" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".FootCareActivity" />
+
+        <activity android:name=".FoodNotificationActivity" />
+        <activity android:name=".MedicineNotificationActivity" />
+        <activity android:name=".PhysicalNotificationActivity"/>
+        <activity android:name=".HIFollowUpNotificationActivity" />
+        <activity android:name=".FootCareNotificationActivity" />
+        <activity android:name=".AvoidDrugNotificationActivity"/> >
+        <activity android:name=".BloodGlucoseNotificationActivity"/>
+        <activity android:name=".UserGuideActivity"/>
+
+        <service
+            android:name=".FoodNotificationIntentService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".MedicineNotificationIntentService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".PhysicalNotificationIntentService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".HIFollowUpNotificationIntentService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".FootCareNotificationIntentService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".AvoidDrugNotificationIntentService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".BloodGlucoseNotificationIntentService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver android:name=".FoodNotificationEventReceiver" />
+        <receiver android:name=".MedicineNotificationEventReceiver" />
+        <receiver android:name=".PhysicalNotificationEventReceiver" />
+        <receiver android:name=".HIFollowUpNotificationEventReceiver" />
+        <receiver android:name=".FootCareNotificationEventReceiver" />
+        <receiver android:name=".AvoidDrugNotificationEventReceiver" />
+        <receiver android:name=".BloodGlucoseNotificationEventReceiver" />
+
+        <receiver android:name=".FoodNotificationServiceStarterReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".MedicineNotificationServiceStarterReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".PhysicalNotificationServiceStarterReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".HIFollowUpNotificationServiceStarterReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".FootCareNotificationServiceStarterReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".AvoidDrugNotificationServiceStarterReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".BloodGlucoseNotificationServiceStarterReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

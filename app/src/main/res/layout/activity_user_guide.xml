@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.foysal.diabetis.UserGuideActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:textSize="15dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You have to enter the advises provided by your health care providers in the app and the app will remind you in the most suitable time to do the activity according to the given advises. In each reminder, your mobile phone will make a sound first, and then the reminder regarding the specific issue will appear in your mobile screen." />
+
+
+            <TextView
+                android:textSize="15dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1.	Diet: " />
+            <TextView
+                android:textSize="15dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You have to enter your dietary advises provided by your Nutritionist/ Health Educator in the specific area of the app.
+\n•	The advises include:
+" />
+            <TextView
+                android:textSize="15dp"
+                android:paddingLeft="30dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="o	Frequency of taking food in a day.
+\no	List of foods that you have to take in your each individual meal.
+\no	Quantity of food that you have to take in your each individual meal.
+" />
+            <TextView
+                android:textSize="15dp"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="•	Then the app will remind you according to the given advices" />
+            <TextView
+                android:textSize="15dp"
+                android:paddingLeft="30dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="o	The app will remind you when you have to take your recommended food.
+\no	It will remind you regarding what types of food you have to take.
+\no	It will remind you regarding the quantity of recommended food.
+" />
+
+            <TextView
+                android:textSize="15dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2.	Drug: " />
+            <TextView
+                android:textSize="15dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="•	Then the app will remind you according to the given advices.
+" />
+            <TextView
+                android:textSize="15dp"
+                android:paddingLeft="30dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="o	Name of drugs.
+\no	Dose (how much/ many) of the medicine that should be taken.
+\no	Frequency (how many times per day) of the medicine that should be taken.
+\no	Direction (when) of the medicine that should be taken.
+\no	Duration (how long) of the medicine that should be taken
+
+" />
+            <TextView
+                android:textSize="15dp"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="•	Then the app will remind you according to the given advices" />
+            <TextView
+                android:textSize="15dp"
+                android:paddingLeft="30dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="o	The app will remind you when you have to take your recommended drug.
+\no	It will remind you regarding the dose of your recommended drug.
+\no	It will remind you regarding the frequency of recommended drug.
+\no	It will remind you regarding duration of recommended drug.
+" />
+
+
+
+            <TextView
+                android:textSize="15dp"
+                android:paddingTop="20dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3.	Physical activity:" />
+            <TextView
+                android:textSize="15dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You have to enter your physical activity advises provided by your Physician in the specific area of the app.
+\n•	The advises include:
+" />
+            <TextView
+                android:textSize="15dp"
+                android:paddingLeft="30dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="o	Name of physical exercise.
+\no	When to do the exercise in a day.
+\no	How long to do the exercise.
+" />
+            <TextView
+                android:textSize="15dp"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="•	Then the app will remind you according to the given advices. " />
+            <TextView
+                android:textSize="15dp"
+                android:paddingLeft="30dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="o	The app will remind you when you have to do your recommended exercise.
+\no	It will remind you regarding duration of recommended exercise
+" />
+
+
+            <TextView
+                android:textSize="15dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4.	Follow-up visit:" />
+            <TextView
+                android:textSize="15dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You have to enter your next date of follow-up visit and the interval period between two follow-up visit (if applicable) advised by your Physician in the specific area of the app
+" />
+            <TextView
+                android:textSize="15dp"
+                android:paddingLeft="30dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="•	Then the app will remind you in two times to go to the follow-up visit. Once, 1 day before to go to the hospital/ Health Center and another, during the advised date to go to the hospital/ Health Center for the follow-up visit.
+" />
+            <TextView
+                android:textSize="15dp"
+                android:paddingLeft="30dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="•	Afterwards, the app will automatically remind you on every due date and 1 day before the date followed by the interval period.
+" />
+
+            <TextView
+                android:textSize="15dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5.	Blood glucose testing: " />
+            <TextView
+                android:textSize="15dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A.	Blood glucose testing in Hospital/ Health Center/ Diagnostic Center:" />
+
+            <TextView
+                android:textSize="15dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You have to enter your next date to go for the diagnosis of your blood glucose in the Hospital/ Health Center/ Diagnostic Center advised by your Physician in the specific area of the app. You have to also enter the interval period between two diagnoses of blood glucose in the app." />
+            <TextView
+                android:textSize="15dp"
+                android:paddingLeft="30dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="•	Then the app will remind you in two times to go for the diagnosis of your blood glucose in the Hospital/ Health Center/ Diagnostic Center. Once, 1 day before to go to the hospital/ Health Center for the diagnosis of blood glucose and another, during the advised date to go to the hospital/ Health Center for the diagnosis of blood glucose.
+" />
+            <TextView
+                android:textSize="15dp"
+                android:paddingLeft="30dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="•	Afterwards, the app will automatically remind you on every due date and 1 day before the date followed by the interval period.
+" />
+
+            <TextView
+                android:textSize="15dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B.	Blood glucose monitoring at home:" />
+            <TextView
+                android:textSize="15dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You have to enter your advised dates and times/day to monitor your blood glucose at home advised by your Physician in the specific area of the app. If you want to keep records of your blood glucose monitored at home by Glucometer, you can also download the BLOOD GLUCOSE RECORD FORM.
+Then the app will remind you to monitor your blood glucose at the time that you have entered in the app.
+" />
+            <TextView
+                android:textSize="15dp"
+                android:paddingTop="20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6.	Avoid to use tobacco/alcohol products:" />
+
+            <TextView
+                android:textSize="15dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="If you are taking any tobacco/ alcohol products and wants to avoid its use, then enter the name of the tobacco product in the specific area of the app and put the usual timing when you are habituated to take the product.
+Then the app will give you a dangerous signal during the time when you attempt to use the tobacco product and remind you not to take the product which may cause your health risks and death.
+" />
+            <TextView
+                android:textSize="15dp"
+                android:paddingTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7.	Foot care: " />
+            <TextView
+                android:textSize="15dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="•	You have to click in the specific area of the app if you want to get automatic foot care reminder as below:" />
+            <TextView
+                android:textSize="15dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="o	The usual advises include" />
+            <TextView
+                android:textSize="15dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="30dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="	Feet wash (daily/ when necessary).
+\n	Feet inspection (daily/ when necessary).
+\n	Shoe and Sock Inspection (Each time before wearing)
+\n	Toenails Trim (weekly or when needed)
+" />
+            <TextView
+                android:textSize="15dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="•	You have to enter if you have any additional foot care advises and timing to take care of your foot recommended by  your Physician which were not mentioned in the previous box.
+\n•	Then the app will remind you in every morning regarding the feet wash, feet inspection and shoe and sock inspection so that you can do the activities at any time of a single day.
+\n•	Moreover the app will remind you in every holiday morning regarding the toenails trim so that you can do trim your nails at any time of your holiday.
+\n•	The app will remind you if you have putted any additional foot care advises and timing to take care of your foot recommended by  your Physician.
+" />
+            <TextView
+                android:textSize="15dp"
+                android:paddingTop="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingBottom="30dp"
+                android:textColor="@android:color/holo_blue_light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Developer : Saimum Islam\nEmail : saimumislam27@gmail.com" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

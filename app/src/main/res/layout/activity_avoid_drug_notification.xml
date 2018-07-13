@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context="com.example.foysal.diabetis.AvoidDrugNotificationActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="10dp"
+                android:text="Avoid to use tobacco/alcohol products: How to quit"
+                android:textColor="@color/avoid"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingLeft="30dp"
+                android:text="\no	Set a quit date. Within 2 weeks is best.
+\no	Tell family and friends for social support and help!
+\no	Review past quit attempt experiences. What worked? What didn’t?
+\no	Anticipate challenges. Symptoms such as irritability, insomnia and coughing may occur for 2-3 weeks after quitting
+\no	Remove tobacco products.
+\no	In addition, ask family members who use tobacco not to smoke around you or leave their tobacco products where you can get them during your quit attempt.
+\no	Avoid betel leaf and betel nut because these may influence you to take tobacco again.
+\no	Avoid alcohol. About half of smokers who try to quit and replace do so when drinking
+"
+                android:textColor="@color/avoid"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

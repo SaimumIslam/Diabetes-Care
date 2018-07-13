@@ -1,0 +1,249 @@
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:layout_margin="5dp"
+tools:context="com.example.foysal.diabetis.Food">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="22dp"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:textColor="@color/food"
+                android:text="Please enter the information regarding dietary advises" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/sec1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="25dp"
+                        android:paddingBottom="2dp"
+                        android:textColor="@color/food"
+                        android:text="a. " />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="How many times your physician advised you to take meal in a day?"
+                        android:textColor="@color/food"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="25dp"
+                        android:textColor="@color/food"
+                        android:text="b. " />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Please click any one of the following options"
+                        android:textColor="@color/food"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/nxt5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="5 Times" />
+
+                    <Button
+                        android:id="@+id/nxt6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="6 Times" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:id="@+id/sec2">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="25dp"
+                        android:textColor="@color/food"
+                        android:text="c. " />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="When your physician advised you to take meal in a day?"
+                        android:textColor="@color/food"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="25dp"
+                            android:textColor="@color/food"
+                            android:text="d. " />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="Please click your recommended meal times"
+                            android:textColor="@color/food"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/breakfast"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="1.  Breakfast"
+                            android:textColor="@color/text"
+                            android:textSize="20dp"
+                            android:layout_marginTop="10dp"
+                            android:clickable="true"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/mornigSnacks"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="2.  Morning Snacks"
+                            android:textColor="#D50000"
+                            android:textSize="20dp"
+                            android:layout_marginTop="10dp"
+                            android:clickable="true"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/lunch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="3.  Lunch"
+                            android:textColor="#D50000"
+                            android:textSize="20dp"
+                            android:layout_marginTop="10dp"
+                            android:clickable="true"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/evening"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="4.  Evening Snacks"
+                            android:textColor="#D50000"
+                            android:textSize="20dp"
+                            android:layout_marginTop="10dp"
+                            android:clickable="true"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/dinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="5.  Dinner"
+                            android:textColor="#D50000"
+                            android:textSize="20dp"
+                            android:layout_marginTop="10dp"
+                            android:clickable="true"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/bedtime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="6.  Bed time Snacks"
+                            android:textColor="#D50000"
+                            android:textSize="20dp"
+                            android:layout_marginTop="10dp"
+                            android:clickable="true"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+           </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

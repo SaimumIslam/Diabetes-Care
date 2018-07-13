@@ -1,0 +1,62 @@
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="center_horizontal"
+android:orientation="vertical"
+android:layout_margin="5dp"
+tools:context="com.example.foysal.diabetis.FoodNotificationActivity">
+<!-- Login progress -->
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="•	You have to follow the balanced diet chart recommended by your Nutritionist/Health Educator\nYou should maintain the main principles of healthy dietary habit"
+            android:textColor="@color/food"
+            android:textSize="21dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="o	Eat a variety of foods\n
+o	Give importance to roti, foods from whole grain, fruits and vegetables
+\no	Give preference to low fat diet or foods prepared by modest amount of oil
+\no	Ensure and maintain the ideal body weight through balanced dietary habit combined with physical exercise
+\no	Control the level of salt, caffeine and alcohol
+\no	Eat slowly which will prevent excess consumption of food
+\no	Drink plenty of water
+\no	Always take part in different activities and games
+\no	Avoid mayonnaise, butter and ghee in daily meal
+\no	Serve fresh fruits during meal time instead of ice-cream, cake etc
+"
+            android:textColor="@color/food"
+            android:textSize="20dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/FoodView"
+            android:paddingLeft="30dp"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:textColor="@color/food"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

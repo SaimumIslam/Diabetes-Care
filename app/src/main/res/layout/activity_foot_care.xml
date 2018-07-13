@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    tools:context="com.example.foysal.diabetis.FootCareActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical" >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="22dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/foot"
+                android:text="Please enter the information regarding Foot Care advises " />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="25dp"
+            android:textColor="@color/foot"
+            android:text="a. " />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="This Mobile Application will give you automatic reminder in each day morning regarding feet wash, feet inspection, shoe and sock inspection and in every holiday morning regarding the toenails trim. If you want to get this reminder, please click here."
+            android:textColor="@color/foot"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Yes I want "
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="normal|bold"
+        android:textColor="@color/foot"
+        android:layout_gravity="center"
+        android:id="@+id/yes"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="25dp"
+            android:textColor="@color/foot"
+            android:text="b. " />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Please enter if you have any additional foot care advises from your Physician which were not mentioned in the previous box. "
+            android:textColor="@color/foot"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Yes I want "
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="normal|bold"
+        android:textColor="@color/foot"
+        android:layout_gravity="center"
+        android:id="@+id/AdditionalYes"
+        />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="25dp"
+                    android:textColor="@color/foot"
+                    android:text="c. " />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Please enter the timing to take care of your foot."
+                    android:textColor="@color/foot"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/Time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                app:ms_arrowColor="@color/foot"
+                app:ms_arrowSize="16dp"
+                app:ms_floatingLabelText="Select the time"
+                app:ms_hint="Select time"
+                app:ms_multiline="true">
+
+            </fr.ganfra.materialspinner.MaterialSpinner>
+
+            <Button
+                android:id="@+id/Save"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="30dp"
+                android:text="Save"
+                android:layout_marginBottom="40dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

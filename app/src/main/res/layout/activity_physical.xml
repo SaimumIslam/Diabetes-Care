@@ -1,0 +1,254 @@
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+tools:context="com.example.foysal.diabetis.Physical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="22dp"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/physical"
+                    android:text="Please enter the information regarding Physical Exercise  advises" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="25dp"
+                    android:textColor="@color/physical"
+                    android:text="a. " />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Please enter the name of your Physical Exercise which is recommended by your Health Care Providers"
+                    android:textColor="@color/physical"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/ExcrciseNames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                app:ms_arrowColor="@color/physical"
+                app:ms_arrowSize="16dp"
+                app:ms_floatingLabelText="Physical Excercise"
+                app:ms_hint="Select Physical Excercise"
+                app:ms_multiline="true">
+
+            </fr.ganfra.materialspinner.MaterialSpinner>
+                <fr.ganfra.materialspinner.MaterialSpinner
+                    android:id="@+id/lightExcercise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    app:ms_arrowColor="@color/physical"
+                    android:visibility="gone"
+                    app:ms_arrowSize="16dp"
+                    app:ms_floatingLabelText="Light activities include "
+                    app:ms_hint="Light activities include"
+                    app:ms_multiline="true">
+
+                </fr.ganfra.materialspinner.MaterialSpinner>
+
+            <LinearLayout
+                android:id="@+id/FEx"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:layout_gravity="left"
+                    android:paddingRight="5dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/PExName"
+                        android:layout_width="176dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Physical Excercise Name"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/PESave"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="173dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="30dp"
+                    android:text="Add"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="25dp"
+                    android:textColor="@color/physical"
+                    android:text="b. " />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Please click when you are recommended to do the exercise in a day"
+                    android:textColor="@color/physical"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/ExTimes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                app:ms_arrowColor="@color/physical"
+                app:ms_arrowSize="16dp"
+                app:ms_floatingLabelText="Time of physical Excercise"
+                app:ms_hint="Select Time of Excercise"
+                app:ms_multiline="true">
+
+            </fr.ganfra.materialspinner.MaterialSpinner>
+
+            <LinearLayout
+                android:id="@+id/Etime"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:layout_gravity="left"
+                    android:paddingRight="5dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/ExTime"
+                        android:layout_width="176dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Excercise Time"
+                        android:inputType="datetime"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/ETSave"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="173dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="30dp"
+                    android:text="Add"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="25dp"
+                    android:textColor="@color/physical"
+                    android:text="c. " />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Please enter how long you are recommended to do the exercise in a day"
+                    android:textColor="@color/physical"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:paddingLeft="5dp"
+                android:layout_gravity="left"
+                android:paddingRight="5dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/Duration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Duration(min)"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/SaveExcercise"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="30dp"
+                android:text="Save Physical"
+                android:textStyle="bold" />
+            <ListView
+                android:layout_width="wrap_content"
+                android:paddingTop="10dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:id="@+id/Listview">
+            </ListView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#388E3C</color>
+    <color name="colorAccent">#00030c</color>
+    <color name="buttonText">#F9FBE7</color>
+    <color name="text">#D50000</color>
+    <color name="food">#400080</color>
+    <color name="medicine">#004080</color>
+    <color name="hi">#006600</color>
+    <color name="bg">#666600</color>
+    <color name="foot">#000066</color>
+    <color name="physical">#662900</color>
+    <color name="avoid">#660000</color>
+</resources>

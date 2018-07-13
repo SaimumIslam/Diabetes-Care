@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.foysal.diabetis.FoodSelect">
+
+    <TextView
+        android:id="@+id/PageTitle"
+        android:layout_width="match_parent"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/selectedFood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ms_arrowColor="@color/food"
+                app:ms_arrowSize="16dp"
+                app:ms_floatingLabelText="Select your Amount"
+                app:ms_hint="Select Amount"
+                app:ms_multiline="true"></fr.ganfra.materialspinner.MaterialSpinner>
+
+            <EditText
+                android:id="@+id/addFood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Food Name"
+                android:visibility="gone"
+                android:imeActionLabel="Food Name"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textAutoComplete"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/selectedAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ms_arrowColor="@color/food"
+                app:ms_arrowSize="16dp"
+                app:ms_floatingLabelText="Select your Food"
+                app:ms_hint="Select our Food"
+                app:ms_multiline="true"></fr.ganfra.materialspinner.MaterialSpinner>
+
+            <EditText
+                android:id="@+id/foodAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="Amount"
+                android:visibility="gone"
+                android:inputType="numberDecimal"
+                android:paddingTop="4dp"
+                android:singleLine="true" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/add"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Add"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/saveFood"
+        android:paddingTop="10dp"
+        style="?android:textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="right"
+        android:text="Next"
+        android:textStyle="bold"/>
+</LinearLayout>

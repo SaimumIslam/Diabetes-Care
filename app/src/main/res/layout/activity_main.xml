@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+    android:paddingBottom="30dp"
+tools:context="com.example.foysal.diabetis.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WELCOME"
+                    android:layout_marginTop="40dp"
+                    android:textSize="30dp"
+                    android:gravity="center"
+                    android:textColor="@color/text"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/textview" />
+
+                <Button
+                    android:id="@+id/Foodbtn"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_background_food"
+                    android:text="Set Diet"
+                    android:textColor="@color/buttonText"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/Medicinebtn"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/buttonText"
+                    android:textSize="15dp"
+                    android:background="@drawable/button_background_medicine"
+                    android:layout_marginTop="10dp"
+                    android:text="Set Drug" />
+
+                <Button
+                    android:id="@+id/Physicalbtn"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/buttonText"
+                    android:textSize="15dp"
+                    android:background="@drawable/button_background_physical"
+                    android:text="Set Physical activity" />
+
+                <Button
+                    android:id="@+id/HelthInformbtn"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/buttonText"
+                    android:background="@drawable/button_background"
+                    android:text=" Set Follow-up visit" />
+
+                <Button
+                    android:id="@+id/Glucosebtn"
+                    android:layout_width="300dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/button_background_blood"
+                    android:text="Blood glucose testing"
+                    android:textColor="@color/buttonText"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/BGRECbtn"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/button_background_drug"
+                    android:text="Avoid tobacco/alcohol products"
+                    android:textColor="@color/buttonText"
+                    android:textSize="15dp" />
+                <Button
+                    android:id="@+id/FootCare"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="300dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/button_background_foot"
+                    android:text="Foot care"
+                    android:textColor="@color/buttonText"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

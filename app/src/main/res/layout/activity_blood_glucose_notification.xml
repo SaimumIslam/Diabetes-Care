@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+    android:layout_margin="5dp"
+android:layout_height="match_parent"
+tools:context="com.example.foysal.diabetis.BloodGlucoseNotificationActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="15dp"
+            android:text="Blood glucose monitoring will help to"
+            android:textColor="@color/bg"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="30dp"
+            android:text="\no	Treat low blood sugar promptly.
+\no	Analyze patterns of highs or lows that may suggest whether any change is needed in the treatment regimen or not.
+\no	Give a good picture of body’s response to diabetes care plan.
+\no	Show the positive effects of exercise
+"
+            android:textColor="@color/bg"
+            android:textSize="25dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="30dp"
+            android:text="o	Test your blood glucose regularly according to the recommendation of your Physician.
+\no	Diabetic Patient should keep their blood glucose
+\no	In Fast: 4.4 -6.1milimol/liter
+\no	After 2 hours of breakfast: 4.4 -7.8 milimol/liter"
+            android:textColor="@color/bg"
+            android:textSize="25dp"
+            android:textStyle="bold|italic" />
+
+
+        <TextView
+            android:id="@+id/now"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:textColor="@color/bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You have to go to doctor Today to  test your Blood Glucose to the hospital" />
+
+        <TextView
+            android:id="@+id/next"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You have to go to doctor Tomorrow to  test your Blood Glucose to the hospital" />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

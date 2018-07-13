@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context="com.example.foysal.diabetis.MedicineNotificationActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingLeft="20dp"
+                android:text="•	Take medicine according to the advice/ prescription of your Physician"
+                android:textColor="@color/medicine"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingLeft="20dp"
+                android:text="• Careful regarding the following issues while taking medicine"
+                android:textColor="@color/medicine"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                app:srcCompat="@drawable/medicine" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:text="o	Check the expiry date of drug before purchase.
+\no	Know the proper techniques of insulin administration and storage
+"
+                android:textColor="@color/medicine"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+    <TextView
+        android:textSize="12dp"
+        android:padding="15dp"
+        android:textColor="@color/medicine"
+        android:id="@+id/medicineView"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
